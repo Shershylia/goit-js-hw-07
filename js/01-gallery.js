@@ -38,6 +38,21 @@ if (event.target === event.currentTarget) {
     <img src="${event.target.dataset.source}" width="800" height="600">
 `);
 
-instance.show()
+    instance.show()
+    
+function closeModalEsp(event) {
+    if (event.key === "Escape") {
+    instance.close();
+  }
+}
+document.addEventListener("keydown", closeModalEsp);
+
+  
 }
 
+// function closeModalEsp(event) {
+//     if (event.key === "Escape") {
+//     instance.close();
+//   }
+// }
+// document.addEventListener("keydown", closeModalEsp);

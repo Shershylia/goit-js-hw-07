@@ -19,17 +19,25 @@ function createMarkup(arr) {
     .join("");
 }
 
-list.addEventListener("click", handleClick);
-
-function handleClick(event) {
-  event.preventDefault();
-  if (event.target === event.currentTarget) {
-    return;
-  }
-
-  const instance = new SimpleLightbox(".gallery a", {
+const instance = new SimpleLightbox(".gallery a", {
     captionsData: "alt",
     captionDelay: 250,
     captionPosition: "bottom",
-  });
-}
+});
+  
+console.log(list);
+
+// list.addEventListener("click", handleClick);
+
+// function handleClick(event) {
+//   event.preventDefault();
+//   if (event.target === event.currentTarget) {
+//     return;
+//   }
+
+//   const instance = new SimpleLightbox(".gallery a", {
+//     captionsData: "alt",
+//     captionDelay: 250,
+//     captionPosition: "bottom",
+//   });
+// }
